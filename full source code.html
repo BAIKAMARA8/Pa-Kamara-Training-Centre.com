@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pa. Kamara's Computer Training Center</title>
+    
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles to ensure 'Inter' font is used and smooth scrolling */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f7f9fb;
+        }
+        /* Style for the interactive hardware component placeholder */
+        .hardware-module-bg {
+            background-image: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+            <div class="text-2xl font-bold text-indigo-700">
+                Pa. Kamara Training
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">About Us</a>
+                <a href="#hardware" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Hardware</a>
+                <a href="#software" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Software</a>
+                <a href="#progress" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Student Login</a>
+                <a href="#contact" class="text-white bg-indigo-600 px-4 py-2 rounded-lg hover:bg-indigo-700 transition duration-300 shadow-lg">Enroll Now</a>
+            </nav>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-indigo-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pt-2 pb-4 shadow-lg">
+            <a href="#about" class="block py-2 text-gray-600 hover:bg-gray-50 rounded-lg">About Us</a>
+            <a href="#hardware" class="block py-2 text-gray-600 hover:bg-gray-50 rounded-lg">Hardware Training</a>
+            <a href="#software" class="block py-2 text-gray-600 hover:bg-gray-50 rounded-lg">Software Training</a>
+            <a href="#progress" class="block py-2 text-gray-600 hover:bg-gray-50 rounded-lg">Student Login</a>
+            <a href="#contact" class="block py-2 text-white bg-indigo-600 mt-2 rounded-lg text-center hover:bg-indigo-700">Enroll Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hardware-module-bg text-white py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4">
+                Master the Digital World. <span class="text-yellow-400">Start Your Future.</span>
+            </h1>
+            <p class="text-xl sm:text-2xl mb-8 font-light max-w-3xl mx-auto">
+                Comprehensive hardware and software training designed for real-world success, from basic literacy to advanced repair.
+            </p>
+            <a href="#courses" class="inline-block bg-yellow-400 text-indigo-900 text-lg font-bold px-8 py-3 rounded-xl shadow-2xl hover:bg-yellow-300 transform hover:scale-105 transition duration-300 ease-in-out">
+                View All Courses
+            </a>
+        </div>
+    </section>
+
+    <!-- CEO / About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-center mb-12 text-indigo-900">Meet Our Visionary Leader</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center md:space-x-12">
+                <div class="md:w-1/3 flex justify-center mb-8 md:mb-0">
+                    <!-- Updated image path to local file -->
+                    <img src="01.jpg" alt="Kamara Tech Innovation CEO" class="rounded-full shadow-xl w-64 h-64 object-cover border-4 border-indigo-600 bg-gray-100">
+                </div>
+                <div class="md:w-2/3 text-center md:text-left">
+                    <h3 class="text-3xl font-bold text-indigo-700 mb-2">Pa. Kamara</h3>
+                    <p class="text-xl text-gray-600 font-semibold mb-6">Kamara Tech Innovation CEO</p>
+                    <p class="text-lg text-gray-700 leading-relaxed max-w-xl md:max-w-none mx-auto">
+                        Pa. Kamara is the driving force behind our mission to empower individuals with essential computer skills. With a profound passion for technology and education, he founded Kamara Tech Innovation to bridge the digital divide and foster a new generation of tech-savvy professionals. His leadership ensures that our training programs are always at the forefront of industry standards, providing practical, impactful learning experiences.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audience Section -->
+    <section id="audience" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12 text-indigo-800">Who We Train</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-indigo-500">
+                    <svg class="w-10 h-10 text-indigo-600 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.857 1.185l.548 1.096a2 2 0 01-.318 2.306l-1.748 1.637a2 2 0 01-2.152.073l-.931-.698M8 14v3m1-4v1m0 0h.01M6 21v-8a2 2 0 012-2h12a2 2 0 012 2v8"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2">The Absolute Beginner</h3>
+                    <p class="text-gray-600">Learn the basics of computer operation, file management, and internet use in a supportive environment.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-indigo-500">
+                    <svg class="w-10 h-10 text-indigo-600 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.565 23.565 0 0112 15c-3.18 0-6.23-.97-8.77-2.745M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm1-5v6m-3-3h6"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2">Career & Job Seekers</h3>
+                    <p class="text-gray-600">Gain certified proficiency in essential software (MS Office) and gain crucial troubleshooting skills for employment.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-indigo-500">
+                    <svg class="w-10 h-10 text-indigo-600 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-6 3H9m5-4a2 2 0 012 2v4m-2 2a2 2 0 01-2-2V7"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2">Small Business Owners</h3>
+                    <p class="text-gray-600">Master tools for accounting, data management, and digital marketing to grow your business efficiently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hardware Section -->
+    <section id="hardware" class="py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-center mb-4 text-indigo-900">Hardware Training 🛠️</h2>
+            <p class="text-xl text-center text-gray-600 mb-12">Become a technician: Understand, build, and troubleshoot computer systems.</p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-indigo-700 mb-4">Featured Courses</h3>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg flex justify-between items-center border-l-4 border-yellow-500">
+                        <div>
+                            <p class="font-semibold text-lg">PC Assembly and Maintenance</p>
+                            <p class="text-sm text-gray-500">Duration: 6 Weeks | Cost: $250</p>
+                        </div>
+                        <button class="text-indigo-600 hover:text-indigo-800 font-semibold transition duration-300">View Details &rarr;</button>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg flex justify-between items-center border-l-4 border-yellow-500">
+                        <div>
+                            <p class="font-semibold text-lg">Laptop Repair Fundamentals</p>
+                            <p class="text-sm text-gray-500">Duration: 8 Weeks | Cost: $350</p>
+                        </div>
+                        <button class="text-indigo-600 hover:text-indigo-800 font-semibold transition duration-300">View Details &rarr;</button>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg flex justify-between items-center border-l-4 border-yellow-500">
+                        <div>
+                            <p class="font-semibold text-lg">Advanced Networking & Cabling</p>
+                            <p class="text-sm text-gray-500">Duration: 4 Weeks | Cost: $200</p>
+                        </div>
+                        <button class="text-indigo-600 hover:text-indigo-800 font-semibold transition duration-300">View Details &rarr;</button>
+                    </div>
+                </div>
+
+                
+                <div class="space-y-8">
+                    <div class="hardware-module-bg p-8 md:p-12 rounded-xl shadow-2xl text-center text-white">
+                        <h3 class="text-3xl font-bold mb-4 text-yellow-300">Hands-on Hardware Repair</h3>
+                        <p class="mb-6 text-indigo-100">Our students gain practical experience with real components.</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <!-- Updated image paths to local files -->
+                            <img src="REPAIR 1.jpg" alt="Students performing laptop repair" class="w-full h-auto rounded-lg shadow-md border-2 border-yellow-300">
+                            <img src="REPAIR 2.jpg" alt="Close-up of laptop repair" class="w-full h-auto rounded-lg shadow-md border-2 border-yellow-300">
+                        </div>
+                        <p class="mt-6 text-indigo-100">From diagnosing issues to component replacement, you'll learn it all.</p>
+                    </div>
+                    <div class="bg-gray-200 p-6 rounded-xl shadow-lg text-center">
+                        <h3 class="text-xl font-bold text-indigo-700 mb-3">Exploring Network Infrastructure</h3>
+                        <!-- Updated image path to local file -->
+                        <img src="CABLING.jpg" alt="Coil of network cable" class="w-2/3 mx-auto h-auto rounded-lg shadow-md mb-4 border border-gray-300">
+                        <p class="text-gray-700">Learn the essentials of cabling and network setup.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Software Section -->
+    <section id="software" class="py-16 md:py-24 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-center mb-4 text-indigo-900">Software Proficiency 💻</h2>
+            <p class="text-xl text-center text-gray-600 mb-12">Master the applications that drive modern business and communication.</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                
+                <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300">
+                    <!-- Placeholder icon -->
+                    <img src="https://placehold.co/60x60/3b82f6/ffffff?text=W" alt="Word Icon" class="mb-3">
+                    <h3 class="text-xl font-semibold mb-1">MS Word Mastery</h3>
+                    <p class="text-sm text-gray-500">Document creation and formatting.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300">
+                    <!-- Placeholder icon -->
+                    <img src="https://placehold.co/60x60/10b981/ffffff?text=X" alt="Excel Icon" class="mb-3">
+                    <h3 class="text-xl font-semibold mb-1">Advanced Excel</h3>
+                    <p class="text-sm text-gray-500">Formulas, pivot tables, and data analysis.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300">
+                    <!-- Placeholder icon -->
+                    <img src="https://placehold.co/60x60/f59e0b/ffffff?text=P" alt="PowerPoint Icon" class="mb-3">
+                    <h3 class="text-xl font-semibold mb-1">Presentation Skills</h3>
+                    <p class="text-sm text-gray-500">Creating effective PowerPoint slides.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300">
+                    <!-- Placeholder icon -->
+                    <img src="https://placehold.co/60x60/ef4444/ffffff?text=@" alt="Email Icon" class="mb-3">
+                    <h3 class="text-xl font-semibold mb-1">Digital Literacy & Safety</h3>
+                    <p class="text-sm text-gray-500">Email, cloud storage, and online security.</p>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-bold text-center text-indigo-700 mb-6">Our Classroom in Action</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-indigo-500">
+                    <!-- Updated image path to local file -->
+                    <img src="CLASS 2.jpg" alt="Students learning Excel in classroom" class="w-full h-auto rounded-lg shadow-md mb-4 border border-gray-300">
+                    <p class="text-gray-700 text-center">Students immersed in practical Excel training, a core skill for any professional.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-indigo-500">
+                    <!-- Updated image path to local file -->
+                    <img src="CLASS 1.jpg" alt="Another view of students in computer class" class="w-full h-auto rounded-lg shadow-md mb-4 border border-gray-300">
+                    <p class="text-gray-700 text-center">Engaged learning is our priority, ensuring every student masters essential software.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Progress/Login Section -->
+    <section id="progress" class="py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-indigo-700 p-8 md:p-12 rounded-2xl shadow-2xl text-white grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-4 text-yellow-300">Secure Student Login</h2>
+                    <p class="text-lg mb-6 text-indigo-100">Access your personalized dashboard to track course completion, download certificates, and view assignment results.</p>
+
+                    
+                    <div class="space-y-4 bg-indigo-800 p-5 rounded-lg">
+                        <p class="font-semibold text-lg">My Current Progress: Advanced Excel</p>
+                        <div class="w-full bg-indigo-900 rounded-full h-3">
+                            <div class="bg-yellow-400 h-3 rounded-full" style="width: 75%" id="progress-bar"></div>
+                        </div>
+                        <p class="text-sm text-yellow-400 font-mono">75% Complete</p>
+                    </div>
+
+                </div>
+
+                
+                <div class="bg-white p-8 rounded-xl shadow-xl">
+                    <form>
+                        <h3 class="text-2xl font-bold text-indigo-700 mb-6">Log In to Your Account</h3>
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" id="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="your@email.com">
+                        </div>
+                        <div class="mb-6">
+                            <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                            <input type="password" id="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="••••••••">
+                        </div>
+                        <button type="submit" class="w-full bg-indigo-600 text-white py-2 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300 shadow-md">
+                            Secure Login
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12 text-indigo-800">What Our Graduates Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-yellow-500">
+                    <p class="text-gray-700 italic mb-4">"The PC Assembly course was incredibly hands-on. I started with zero knowledge and now I run my own small repair shop!"</p>
+                    <p class="font-bold text-indigo-600">— John S Kamara., Hardware Specialist</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-yellow-500">
+                    <p class="text-gray-700 italic mb-4">"Pa. Kamara's patient approach to Excel made all the difference. My resume looks so much stronger now. Highly recommend!"</p>
+                    <p class="font-bold text-indigo-600">— Mary Turay., Office Administrator</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-yellow-500">
+                    <p class="text-gray-700 italic mb-4">"I finally understand digital security and how to use cloud tools for my tailoring business. It's truly life-changing."</p>
+                    <p class="font-bold text-indigo-600">— Abu Sesay., Small Business Owner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-indigo-800">
+        <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-center mb-4 text-white">Get in Touch</h2>
+            <p class="text-xl text-center text-indigo-200 mb-6">Ready to start training? Send us a message today or contact us directly.</p>
+            
+            <!-- Contact Info -->
+            <div class="text-center text-white mb-8 space-y-2">
+                <p class="text-lg font-medium">
+                    <span class="font-bold text-yellow-300">Email:</span> 
+                    <a href="mailto:mohamedbaikamara4@gmail.com" class="hover:underline">mohamedbaikamara4@gmail.com</a>
+                </p>
+                <p class="text-lg font-medium">
+                    <span class="font-bold text-yellow-300">Phone:</span> 
+                    <a href="tel:+23272434382" class="hover:underline">+232 72 434382</a>
+                </p>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="bg-white p-8 rounded-xl shadow-2xl">
+                <form id="contact-form">
+                    <div class="mb-4">
+                        <label for="contact-name" class="block text-sm font-medium text-gray-700">Your Name</label>
+                        <input type="text" id="contact-name" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="contact-email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="contact-email" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                    <div class="mb-6">
+                        <label for="contact-message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="contact-message" rows="4" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-yellow-500 text-indigo-900 font-bold py-3 rounded-lg hover:bg-yellow-400 transition duration-300 shadow-lg">
+                        Send Inquiry
+                    </button>
+                    <p id="contact-status" class="mt-4 text-center text-sm hidden text-green-600 font-medium">Thank you! Your message has been received.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <p class="text-lg font-semibold mb-2">Contact Pa. Kamara</p>
+            <p class="text-sm text-indigo-300">
+                Email: <a href="mailto:mohamedbaikamara4@gmail.com" class="hover:text-white transition duration-300">mohamedbaikamara4@gmail.com</a>
+            </p>
+            <p class="text-sm text-indigo-300 mb-4">
+                Phone: <a href="tel:+23272232382" class="hover:text-white transition duration-300">+232 72 232382</a>
+            </p>
+
+            <p class="text-sm">&copy; 2025 Pa. Kamara's Computer Training Center. All Rights Reserved.</p>
+            <div class="mt-2 space-x-4 text-xs">
+                <a href="#" class="hover:text-indigo-400">Privacy Policy</a>
+                <a href="#" class="hover:text-indigo-400">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // JavaScript for Contact Form Submission (Mock)
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show success message
+            const statusMessage = document.getElementById('contact-status');
+            statusMessage.textContent = "Thank you! Your message has been received.";
+            statusMessage.classList.remove('hidden', 'text-red-600');
+            statusMessage.classList.add('text-green-600');
+
+            // Clear the form fields
+            document.getElementById('contact-form').reset();
+
+            // Hide the status message after 5 seconds
+            setTimeout(() => {
+                statusMessage.classList.add('hidden');
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
